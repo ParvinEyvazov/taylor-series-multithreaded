@@ -42,3 +42,47 @@ When we run the code, it takes the operation, thread range numbers as an input, 
 <p align="center">
   <img height="50px" src="assets/general4.png">
 </p>
+
+Let’s try different operation numbers to see the accuracy (marked part is the true part).
+
+|  Number of operations  | Calculated pi value  | Calculation time (64 threads) |
+| :--------------------: | :------------------: | :---------------------------: |
+|         10 000         | '3.1415'426535898257 |        0.00400 seconds        |
+|        100 000         | '3.1415'876535897933 |        0.00501 seconds        |
+|       1 000 000        | '3.141592'1535897908 |        0.00400 seconds        |
+|       10 000 000       | '3.1415926'035898791 |        0.01000 seconds        |
+|      100 000 000       | '3.1415926'485898868 |        0.07900 seconds        |
+|     1 000 000 000      | '3.141592653'1167107 |        0.72987 seconds        |
+| 2 147 483 647(MAX_INT) | '3.141592653'0722826 |        1.52806 seconds        |
+
+---
+
+### BONUS: How to run these codes? (These instructions are for **_Ubuntu OS_**)
+
+- Compile the code
+
+```bash
+gcc -o taylor taylor.c –lpthread
+```
+
+- Run the code
+
+```bash
+./taylor
+```
+
+- Give the according values as an input
+
+```bash
+Enter the operation numbers: 500000
+From thread no: 1
+From 1 to thread no: 64
+```
+
+---
+
+<h3 align="center">
+    THANKS FOR READING
+</h3>
+
+---
